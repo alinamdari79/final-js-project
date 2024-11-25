@@ -31,5 +31,8 @@ export default function welcomePage() {
     element: "div",
     children: [backgroundImg],
   });
+  setTimeout(function () {
+    router.navigate("/explanation1");
+  }, 2000);
   return container;
 }
