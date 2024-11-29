@@ -6,14 +6,14 @@ export default function explanationPage3() {
     children: "Get Started",
     className:
       "bg-gray-900 w-[350px] h-[45px] rounded-3xl mt-6 text-white cursor-pointer hover:bg-gray-700",
-    // eventListener: [
-    //   {
-    //     event: "click",
-    //     callback: () => {
-    //       router.navigate("/");
-    //     },
-    //   },
-    // ],
+    eventListener: [
+      {
+        event: "click",
+        callback: () => {
+          router.navigate("/log-in");
+        },
+      },
+    ],
   });
   const firstCarousel = El({
     element: "button",

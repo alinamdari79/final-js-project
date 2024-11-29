@@ -6,6 +6,7 @@ import welcomePage from "../pages/onboarding/welcome/welcome.js";
 import explanationPage1 from "../pages/onboarding/explanation/explanation-page1.js";
 import explanationPage2 from "../pages/onboarding/explanation/explanation-page2.js";
 import explanationPage3 from "../pages/onboarding/explanation/explanation-page3.js";
+import logInPage from "../pages/login page/log-in.js";
 
 export const router = new Navigo("/");
 
@@ -24,4 +25,7 @@ router
   })
   .on("/explanation3", () => {
     changePage(explanationPage3);
+  })
+  .on("/log-in", () => {
+    changePage(logInPage);
   });
